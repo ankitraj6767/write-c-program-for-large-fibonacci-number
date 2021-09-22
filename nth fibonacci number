@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int fib(int n){
+ 
+ if(n==0||n==1){ //base condition
+ return n;
+ }
+ return fib(n-1)+fib(n-2);//recurrsive call
+}
+
+int main(){
+ int n;
+ printf("Enter the value of n: ");
+ scanf("%d",&n);
+ printf("%dth number of fibonacci series is %d",n,fib(n));
+}
